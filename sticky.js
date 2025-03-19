@@ -93,14 +93,15 @@ function DeleteNote(e) {
         SaveNoteData();
     }
 }
-const headEl=document.querySelector(".heading");
-const sticky = ["Sticky Notes"]
-let stickyIndex = 0;
+var i = 0;
+var txt = document.getElementById("headings");
+var speed=50;
+function typeWriter(){
+    if(i<txt.length){
+        document.getElementById("headings").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
 
-let characterIndex = 0;
-updateText();
-function updateText(){
-    headEl.innerHTML = ` <h1>${sticky[stickyIndex].slice(0,characterIndex)}</h1>`;
-    characterIndex++;
-    setTimeout(updateText, 400);
 }
+typeWriter();
