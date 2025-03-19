@@ -1,0 +1,78 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    background-color: #a7a8aa;
+    gap:10px;
+    padding:10px;
+}
+.mothers{
+    display:flex;
+    flex-direction:row;
+    background-color: #a7a8aa;
+    gap:80px;
+    padding:10px;
+}
+.clocks{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.timer{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.hour{
+    border:1px solid black;
+    text-align: center;
+    width:40px;
+    background-color: rgb(203, 220, 222);
+    padding:5px;
+    border-radius: 5px;
+}
+.min{
+    border:1px solid black;
+    text-align: center;
+    width:40px;
+    background-color: rgb(203, 220, 222);
+    padding:5px;
+    border-radius: 5px;
+}
+.sec{
+    border:1px solid black;
+    text-align: center;
+    width:40px;
+    background-color: rgb(203, 220, 222);
+    padding:4px;
+    border-radius: 5px;
+}
+.hours{
+    border:1px solid black;
+    text-align: center;
+    width:30px;
+    background-color: rgb(203, 220, 222);
+    padding:4px;
+    border-radius: 5px;
+}
+.mins{
+    border:1px solid black;
+    text-align: center;
+    width:30px;
+    background-color: rgb(203, 220, 222);
+    padding:4px;
+    border-radius: 5px;
+}
+.secs{
+    border:1px solid black;
+    text-align: center;
+    width:30px;
+    background-color: rgb(203, 220, 222);
+    padding:4px;
+    border-radius: 5px;
+}
+.sub{
+    cursor: pointer;
+}
+.refresh{
+    cursor:pointer;
+}

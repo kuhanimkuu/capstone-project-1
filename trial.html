@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="container">
+        <p id="usernameError" style="color:red; display:none;">Time input is out of range</p>
+        <p id="timeup" style="color:red; display:none;">Time is up!!!</p>
+        <div class="times" id="MyClockDisplay"></div>
+        <div class="mothers">
+            <div class="clocks">
+                <form>
+                <input type="number" class="hour" id="hour" defaultValue="00" placeholder="hr"></input>
+                <input type="number" class="min" id="min" defaultValue="00" placeholder="min"></input>
+                <input type="number" class="sec" id="sec" defaultValue="00" placeholder="sec"></input>
+                </form>
+            </div>
+            <button class="refresh" id="refresh" onclick="location.reload()">Refresh</button>
+            <button class="sub" id="sub">Start Time</button>
+            <div class="timer">
+                <span class="hours" id="hours">Hrs</span>
+                <span class="mins" id="mins">Mins</span>
+                <span class="secs" id="secs">sec</span>
+            </div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

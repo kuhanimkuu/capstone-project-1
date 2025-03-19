@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="todo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <a href="index.html"> Home</a>
+            <a href="sticky.html">Sticky notes</a>
+            <a href="contact.html">Contact</a>
+      
+        </div>
+    </nav>
+        <div class="me">
+            <div class="container">
+                <div class="todo-title">
+                    <h1>Todo List</h1>
+                </div>
+                
+                <div class="input-section">
+                    <input type="text" id="todoInput" placeholder="Add a new task...">
+                    <button class="add-btn" onclick="addTodo()"><i class='bx bx-list-plus' ></i> Add</button>
+                </div>
+
+                <div class="sort-section">
+                    <button class="sort-button" onclick="toggleSort()">Sort by Oldest <i class='bx bx-sort' ></i></button>
+                </div>
+
+                <div class="todo-section">
+                    <div class="section-header active" onclick="toggleSection('uncompleted')">
+                        <div class="section-header-row">
+                            <h2>Uncompleted Tasks</h2>
+                            <span class="count" id="uncompleted-count">0</span>
+                        </div>
+                        <span class="chevron"><i class='bx bx-chevron-down' ></i></span>
+                    </div>
+                    <div class="section-content expanded" id="uncompleted-section">
+                        <ul id="uncompletedList">
+                            <li class="todo-item">
+                                <input type="checkbox" class="checkbox">
+                                <span class="todo-text">Play games</span>
+                                <button class="delete-btn"><i class='bx bx-trash' ></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="todo-section">
+                    <div class="section-header" onclick="toggleSection('completed')">
+                        <div class="section-header-row">
+                            <h2>Completed Tasks</h2>
+                            <span class="count" id="completed-count">0</span>
+                        </div>
+                        <span class="chevron"><i class='bx bx-chevron-down' ></i></span>
+                    </div>
+                    <div class="section-content" id="completed-section">
+                        <ul id="completedList"></ul>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="mother">
+            <div>
+                <div class="task-container">
+                <a href="to-do.html"> <p class="tasks" id="tasks">task</p></a>
+                    <span></span>
+                    <div class="calendar-container">
+            
+                        <p class="month-name" id="month-name">May</p>
+                        <p class="day-name" id="day-name">Friday</p>
+                        <p class="day-number" id="day-number">20</p>
+                        <p class="year" id="year">2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="containers">
+        <p id="usernameError" style="color:red; display:none;">Time input is out of range</p>
+        <p id="timeup" style="color:red; display:none;">Time is up!!!</p>
+        <div class="times" id="MyClockDisplay"></div>
+        <div class="mothers">
+            <div class="clocks">
+                <form>
+                <input type="number" class="hour" id="hour" defaultValue="00" placeholder="hr"></input>
+                <input type="number" class="min" id="min" defaultValue="00" placeholder="min"></input>
+                <input type="number" class="sec" id="sec" defaultValue="00" placeholder="sec"></input>
+                </form>
+            </div>
+            <button class="refresh" id="refresh" onclick="location.reload()">Refresh</button>
+            <button class="sub" id="sub">Start Time</button>
+            <div class="timer">
+                <span class="hours" id="hours">Hrs</span>
+                <span class="mins" id="mins">Mins</span>
+                <span class="secs" id="secs">sec</span>
+            </div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
