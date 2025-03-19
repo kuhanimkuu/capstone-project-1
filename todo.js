@@ -122,9 +122,7 @@ const monthName = document.getElementById("month-name");
 const dayName = document.getElementById("day-name");
 const dayNum = document.getElementById("day-number");
 const year = document.getElementById("year");
-const task = document.querySelector("span");
 const uncompletedList = document.getElementById('uncompletedList');
-task.innerHTML=uncompletedList[0];
 const date = new Date();
 let dateNo = date.getDate();
 let month= date.getMonth();
@@ -202,19 +200,6 @@ document.getElementById("sub").addEventListener("click", function twink(){
 });
 
 timer();
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // clock
