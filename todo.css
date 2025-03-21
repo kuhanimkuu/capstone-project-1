@@ -1,5 +1,5 @@
 body{
-    background: rgb(141, 128, 226);
+    background: linear-gradient(330deg, rgb(0, 0, 0),rgb(141, 128, 226),rgb(255, 255, 255));
     margin:0;
      display:flex;
     flex-direction: column; 
@@ -10,7 +10,7 @@ body{
   /* navigation bar */
 nav{
  
-    background-color:orangered;
+    /* background-color:orangered;
     text-decoration: none;
     font-size: 30px;
     justify-content: center;
@@ -19,7 +19,7 @@ nav{
     margin-top:5px;
     border-radius:10px;
     transition: all ease-in-out 0.2s;
-    padding:20px;
+    padding:20px; */
 }
 nav:hover{
     background-color:#45a049;
@@ -29,18 +29,64 @@ nav:hover{
     flex-direction:row;
     text-align: center;
     justify-content: space-between;
+    text-decoration: none;
+    background-color:rgb(0, 0, 0);
+    opacity:0.5;
+    gap:10px;
+    justify-content:space-evenly;
+    font-size:40px;
+    height:70px;
+    align-items:center;
+    width:99.19%;
+    position:fixed;
+    transition:all 0.5s ease;
+    margin-bottom:40%;
+    z-index:4;
 }
-a{
+.navigation:hover{
+    transition: 0.5s;
+    opacity:1;
+    
+}
+/* a{
     color:rgb(255, 255, 255);
     font-weight: bold;
     transition: all ease-in-out 0.2s;
 }
 a:hover{
     font-size:40px;
-}
+} */
 
+
+
+
+a{
+    font-weight: bold;
+    text-decoration:none;
+}
+a:link{
+    color:aqua;
+}
+a:visited{
+    color:rgb(237, 235, 238);
+    transform:scale(0.8);
+}
+.lnk{
+    opacity:1;
+    transition:all 0.5s ease;
+}
+.lnk:hover{
+    transition:0.5s;
+    color:black;
+    background-color:white;
+    opacity:1;
+    text-decoration: underline;
+    font-style: italic;
+    transform:scale(1.2);
+}
 /* calendar */
 .me{
+    margin-top:8%;
     display:flex;
     flex-direction: row;
     gap:10px;
@@ -324,12 +370,21 @@ button:hover {
 }
 .mothers{
     display:flex;
-    flex-direction:row;
-     background-color: #4c3f5f; 
-    gap:80px;
+    flex-direction:column;
+    background-color: #4c3f5f; 
+    gap:30px;
     padding:10px;
-    width:98%;
-    justify-content: center;
+    width:300px;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top:10%;
+}
+.timers{
+    font-size:30px;
+    background-color: whitesmoke;
+    width:100px;
+    text-align: center;
     border-radius: 10px;
 }
 .clocks{
@@ -338,6 +393,17 @@ button:hover {
     gap: 20px;
     justify-content: end;
 }
+
+.buttn{
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+    width:100px;
+}
+
+   
+
+
 .timer{
     display:flex;
     flex-direction: row;
@@ -394,10 +460,13 @@ button:hover {
 .sub{
     cursor: pointer;
     color:black;
+    border-radius: 10px;
+ 
 }
 .refresh{
     cursor:pointer;
     color:black;
+    border-radius: 10px;
 }
 .times{
     background-color: white;
@@ -405,13 +474,4 @@ button:hover {
     width:200px;
     margin-top: 10%;;
     text-align: center;
-}
-.timers{
-    font-size:30px;
-    transform: translateX(-200px);
-    background-color: whitesmoke;
-    width:100px;
-    text-align: center;
-    border-radius: 10px;
-   
 }
