@@ -1,5 +1,5 @@
 body{
-    background-color: slateblue;
+    background: rgb(141, 128, 226);
     margin:0;
      display:flex;
     flex-direction: column; 
@@ -46,6 +46,7 @@ a:hover{
     gap:10px;
     justify-content: space-evenly;
     font-family: cursive;
+    
 }
   .calendar-container{
     background-color:white;
@@ -316,8 +317,7 @@ button:hover {
 .containers{
     display:flex;
     flex-direction: column;
-    background-color: #8d51e8;
-    gap:10px;
+    gap:5px;
     padding:10px;
     justify-content: center;
     border-radius:10px;
@@ -325,16 +325,18 @@ button:hover {
 .mothers{
     display:flex;
     flex-direction:row;
-    background-color: #8d51e8;
+     background-color: #4c3f5f; 
     gap:80px;
     padding:10px;
-    width:100%;
+    width:98%;
     justify-content: center;
+    border-radius: 10px;
 }
 .clocks{
     display:flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: end;
 }
 .timer{
     display:flex;
@@ -398,5 +400,18 @@ button:hover {
     color:black;
 }
 .times{
+    background-color: white;
     font-size: 30px;
+    width:200px;
+    margin-top: 10%;;
+    text-align: center;
+}
+.timers{
+    font-size:30px;
+    transform: translateX(-200px);
+    background-color: whitesmoke;
+    width:100px;
+    text-align: center;
+    border-radius: 10px;
+   
 }
