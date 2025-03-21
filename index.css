@@ -30,15 +30,43 @@ body{
     font-size: 40px;
     gap:10%;
     z-index: 2;
-    
-
+    font-weight: bold;
+    text-decoration: none;
+    background-color:rgb(0, 0, 0);
+    opacity:0.5;
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content:space-evenly;
+    font-size:40px;
+    height:70px;
+    align-items:center;
+    width:99.19%;
+    position:fixed;
+    transition:all 0.5s ease;
+    margin-bottom:20%;
+  
 }
+.navigation:hover{
+    transition: 0.5s;
+    opacity:1;
+    
+}
+
 .me{
     color:rgb(255, 255, 255);
     text-decoration: none;
+    opacity:1;
+    transition:all 0.5s ease;
 }
 .me:hover{
-    background-color: gainsboro;
+    transition:0.5s;
+    color:black;
+    background-color:white;
+    opacity:1;
+    text-decoration: underline;
+    font-style: italic;
+    transform:scale(1.2);
 }
 .paragraph{
  position: fixed;
@@ -84,7 +112,7 @@ body{
     width:98%;
     font-size: 20px;
     height:40px;
-    background-color: white;
+    background-color:burlywood;
     margin-bottom:0;
     padding:10px;
   
@@ -92,5 +120,5 @@ body{
   }
 
   .links{
-    background-color: white;
+    background-color:burlywood;
   }

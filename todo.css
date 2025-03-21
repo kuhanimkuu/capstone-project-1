@@ -4,6 +4,7 @@ body{
      display:flex;
     flex-direction: column; 
     gap:20px;
+    justify-content: space-evenly;
     
   }
   /* navigation bar */
@@ -43,7 +44,7 @@ a:hover{
     display:flex;
     flex-direction: row;
     gap:10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: cursive;
 }
   .calendar-container{
